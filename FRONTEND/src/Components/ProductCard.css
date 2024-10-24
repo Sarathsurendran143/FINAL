@@ -1,0 +1,142 @@
+/* Container for the product card */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px;
+    width: 270px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    background-color: #f8f6f6;
+    text-align: center;
+  }
+  
+  /* Image styling */
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Title styling */
+  .product-title {
+    font-size: 1.5rem;
+    color: #080808;
+    margin: 12px 0;
+  }
+  
+  /* Description styling */
+  .product-description {
+    font-size: 1rem;
+    color: #313131;
+    margin-bottom: 12px;
+  }
+  
+  /* Price and Add to Cart button container */
+  .product-price-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    margin-top: 16px;
+  }
+  
+  /* Price styling */
+  .product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #dd4c28;
+  }
+  
+  /* Add to Cart button styling */
+  /* .add-to-cart-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   */
+  /* Hover effect for the button */
+  /* .add-to-cart-btn:hover {
+    background-color: #0056b3;
+  } */
+  /* From Uiverse.io by vinodjangid07 */ 
+.cartBtn {
+  width: 155px;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  background-color: rgb(29, 29, 29);
+  box-shadow: 0 20px 30px -7px rgba(27, 27, 27, 0.219);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cart {
+  z-index: 2;
+}
+
+.cartBtn:active {
+  transform: scale(0.96);
+}
+
+.product {
+  position: absolute;
+  width: 12px;
+  border-radius: 3px;
+  content: "";
+  left: 23px;
+  bottom: 23px;
+  opacity: 0;
+  z-index: 1;
+  fill: rgb(211, 211, 211);
+}
+
+.cartBtn:hover .product {
+  animation: slide-in-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  /* border: #006fff 0.2em solid; */
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0) rotate(-90deg);
+    opacity: 1;
+  }
+}
+
+.cartBtn:hover .cart {
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+  /* Hover effect for the product card */
+  .product-card:hover {
+    transform: translateY(-5px);
+    border: #0c0c0c 0.2em solid;
+  }

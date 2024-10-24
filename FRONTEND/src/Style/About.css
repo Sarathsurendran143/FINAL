@@ -1,0 +1,60 @@
+.about-cont {
+    position: relative; /* Create a positioning context */
+    height: 100vh; /* Full height for the container */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .video-background {
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send it behind the Navbar */
+    overflow: hidden; /* Hide any overflow */
+    backdrop-filter: blur(10px);
+    
+  }
+  
+  .about-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area */
+  }
+  .ab-par{
+    justify-content: center;
+    margin: 20px;
+    color: aliceblue;
+    font-family: poppins;
+    text-shadow: 2px 2px black;
+  }
+  .abt-btn{
+    width: 150px;
+    height: 50px;
+    margin-left: 80px;
+    color: rgb(250, 246, 246);
+    background: none;
+   font-family: fantasy;
+   border-radius: 5px;
+   border: 2px solid white;
+  }
+  .abt-btn:hover{
+    background-color: rgb(250, 246, 246);
+    /* color: rgb(7, 7, 7); */
+  }
+  .Contbut{
+    text-decoration: none;
+    color: rgb(245, 243, 243);
+
+  }
+  /* .Contbut{
+    color: rgb(247, 243, 243);
+  } */
+  .Abtout{
+    border: 2px solid white;
+    margin: 20px;
+    padding: 20px;
+  }
+  .Contbut:hover{
+    color: black;
+  }

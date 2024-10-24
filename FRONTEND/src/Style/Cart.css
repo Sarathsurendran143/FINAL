@@ -1,0 +1,209 @@
+/* Cart page container */
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    padding: 20px;
+  }
+  
+  .carthed {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #faf8f8;
+  }
+  
+  .cart-list {
+    list-style-type: none;
+    padding: 0;
+    /* width: 100%; */
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .cart-item-details h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item-details p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  
+  
+  .total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .total-price h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* From Uiverse.io by JaydipPrajapati1910 */ 
+.place-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background: none;
+  outline: 3px #faf9f9 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+
+.buynow {
+  color: rgb(250, 244, 244);
+  font-weight: 700;
+  font-size: 20px;
+  transition: 400ms;
+  margin: 10px;
+}
+
+
+/* .place-order svg path {
+  transition: 400ms;
+}
+
+.place-order:hover {
+  background-color: transparent;
+
+}
+
+.place-order:hover .buynow {
+  color: #080808;
+ 
+}
+
+.place-order:hover svg path {
+  fill: #181717;
+}
+   */
+  /* From Uiverse.io by vinodjangid07 */ 
+.Rmvbtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Rmvbtn:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+}
+
+.Rmvbtn:hover .svgIcon {
+  width: 50px;
+  transition-duration: .3s;
+  transform: translateY(60%);
+}
+
+.Rmvbtn::before {
+  position: absolute;
+  top: -20px;
+  content: "Delete";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+
+.Rmvbtn:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+  
+  /* Adjust for mobile responsiveness */
+  @media (max-width: 768px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-item-image {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .cart-item-details {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .total-price {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }

@@ -1,0 +1,51 @@
+.contact-section {
+    max-width: 600px;
+    
+    margin: 50px auto;
+    padding: 20px;
+    background:none;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid wheat;
+
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .contact-section input:focus,
+  .contact-section textarea:focus {
+    border-color: #007bff; /* Change the color to your preferred focus color */
+    outline: none;
+  }
+  
+  .contact-section button {
+    padding: 10px;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-section button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  .conthed{
+    color: white;
+   text-align: center;
+   font-family: poppins;
+  }
