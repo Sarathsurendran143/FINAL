@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import Tshirt from '../media/hoodie.mp4'
+import Tshirt from '../media/Hoodie.mp4'
 import '../Style/About.css'
 import { Link } from 'react-router-dom'
 import Footer from '../Components/Footer'
