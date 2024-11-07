@@ -12,7 +12,7 @@ const ProductCard = ({ product }) => {
       quantity: 1,
     };
 
-    const response = await fetch('http://localhost:5000/cart', {
+    const response = await fetch('https://final-jc8p.onrender.com/cart', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
