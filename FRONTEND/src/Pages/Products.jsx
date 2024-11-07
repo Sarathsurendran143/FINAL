@@ -9,7 +9,7 @@ const Products = () => {
   const [loading, setLoading] = useState(true);
 
   const getProducts = async () => {
-    const response = await fetch('http://localhost:5000/products');
+    const response = await fetch('https://final-jc8p.onrender.com/products');
     const data = await response.json();
     setProducts(data);
     setLoading(false);
